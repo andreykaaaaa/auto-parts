@@ -14,7 +14,7 @@
 .default {
   background-color: rgb(247 254 231);
   height: max-content;
-  min-height: 100%;
+  min-height: 100vh;
 }
 .body {
   width: 80%;

@@ -1,0 +1,59 @@
+* {
+  font-family: Gilroy, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+
+    &-thumb {
+      border: 3px solid #fcfcfc;
+      border-radius: 10px;
+      background-color: #7c98a1;
+
+      &:active {
+        background-color: #697f87;;
+      }
+    }
+    &-track {
+      background-color: #fcfcfc;
+    }
+    &-button {
+      color: #7c98a1;
+
+      &:vertical {
+        &:decrement {
+          background: #fcfcfc 0 6px / 15px 15px url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="15" height="15" viewBox="0 0 320 512"%3E%3Cpath fill="%237c98a1" d="M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9S19 224.1 32 224.1h256c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"%2F%3E%3C%2Fsvg%3E') no-repeat;
+        }
+        &:increment {
+          background: #fcfcfc 0 -6px / 15px 15px url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="15" height="15" viewBox="0 0 320 512"%3E%3Cg transform="translate(0 512) scale(1 -1)"%3E%3Cpath fill="%237c98a1" d="M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9S19 224.1 32 224.1h256c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat;
+        }
+      }
+      &:horizontal {
+        &:decrement {
+          background: #fcfcfc 6px 0 / 15px 15px url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="15" height="15" viewBox="0 0 512 320"%3E%3Cg transform="rotate(-90 160 160)"%3E%3Cpath fill="%237c98a1" d="M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9S19 224.1 32 224.1h256c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat;
+        }
+        &:increment {
+          background: #fcfcfc -6px 0 / 15px 15px url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="15" height="15" viewBox="0 0 512 320"%3E%3Cg transform="rotate(90 256 256)"%3E%3Cpath fill="%237c98a1" d="M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9S19 224.1 32 224.1h256c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat;
+        }
+      }
+    }
+  }
+}
+
+body, html, #__nuxt, .app {
+  height: auto;
+}
+
+p, span, h1, h2, h3, h4 {
+  color: var(--third-text-color);
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
